@@ -1,0 +1,49 @@
+* {  /* universal selector which selects everything */
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100vw; /* 100% of the browser width */
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+    background-image: url("backgrounds/morning.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+    position: relative;
+    width: 100%;  /* 100% of its parent (body) */
+    height: 100%;
+}
+
+#info {
+    position: absolute;  /* take it out from the flow (body) */
+    top: 50px;
+    left: 10%;
+}
+
+#figure {
+    position: absolute;
+    display: flex;
+    bottom: 0px;
+    right: 20%;
+    flex-direction: column;
+    align-items: center;  /* by default, flex items are set to stretch */
+}
+
+h1 {
+    color: white;
+    filter: drop-shadow(1px 1px 3px black);
+    font-size: 2.5em;
+}
+
+#time {
+    margin-top: 20px;
+    background-color: rgba(256, 256, 256, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+    width: fit-content;
+}
